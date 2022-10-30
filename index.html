@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Trillo &mdash; Hotel Booking app</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <i class="fa-solid fa-warehouse logo"></i>
+
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Search Hotel">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="./img/sprite.svg#icon-search
+                        "></use>
+                    </svg>
+                </button>
+            </form>
+
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="./img/sprite.svg#icon-bookmark
+                        "></use>
+                    </svg>
+                    <span class="user-nav__notification">7</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="./img/sprite.svg#icon-bubbles2
+                        "></use>
+                    </svg>
+                    <span class="user-nav__notification">13</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="./img/user.jpg" alt="user Photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">
+                        Siam
+                    </span>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="./img/sprite.svg#icon-home2
+                                "></use>
+                            </svg>
+                            <span class="">Hotel</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="./img/sprite.svg#icon-plane
+                                "></use>
+                            </svg>
+                            <span class="">Flights</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="./img/sprite.svg#icon-key
+                                "></use>
+                            </svg>
+                            <span class="">Car Rental</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="./img/sprite.svg#icon-map2
+                                "></use>
+                            </svg>
+                            <span class="">Tours</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="legal">
+                    &copy; 2022 by trillo .All right reseved
+                </div>
+            </nav>
+
+
+            <main class="hotel-view">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="./img/hotel-1.jpg" alt="Photo Hotel 1" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="./img/hotel-2.jfif" alt="Photo Hotel 2" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="./img/hotel-3.jpg" alt="Photo Hotel 2" class="gallery__photo">
+                    </figure>
+                </div>
+
+                <div class="overview">
+                    <h1 class="overview__heading">
+                        Hotel las palmas
+                    </h1>
+                    <div class="overview__stars">
+                        <svg class="overview__icon-star">
+                            <use xlink:href="./img/sprite.svg#icon-star-full
+                            "></use>
+                        </svg>
+                        <svg class="overview__icon-star">
+                            <use xlink:href="./img/sprite.svg#icon-star-full
+                            "></use>
+                        </svg>
+                        <svg class="overview__icon-star">
+                            <use xlink:href="./img/sprite.svg#icon-star-full
+                            "></use>
+                        </svg>
+                        <svg class="overview__icon-star">
+                            <use xlink:href="./img/sprite.svg#icon-star-full
+                            "></use>
+                        </svg>
+                    </div>
+
+                    <div class="overview-location">
+                        <svg class="overview__icon-location">
+                            <use xlink:href="./img/sprite.svg#icon-location
+                            "></use>
+                        </svg>
+                        <button class="btn-inline">Albufeira.portugal</button>
+                    </div>
+
+                    <div class="overview-rating">
+                        <div class="overview-rating-avarage">8.5</div>
+                        <div class="overview-rating-count">429 votes</div>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <div class="description">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas obcaecati eum fugit, animi
+                            accusamus impedit alias! Cum maxime cupiditate amet?
+                        </p>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas obcaecati eum fugit, animi
+                            accusamus impedit alias! Cum maxime cupiditate amet?
+                        </p>
+                        <ul class="list">
+                            <li class="list__item">Close to beach</li>
+                            <li class="list__item">Close to beach</li>
+                            <li class="list__item">Close to beach</li>
+                            <li class="list__item">Close to beach</li>
+                            <li class="list__item">Close to beach</li>
+                            <li class="list__item">Close to beach</li>
+                        </ul>
+                        <div class="recommend">
+                            <p class="recommend__count">
+                                Lorem ipsum dolor sit amet
+                            </p>
+                            <div class="recommend__friends">
+                                <img src="./img/user-4.jfif" alt="" class="recommend__photo">
+                                <img src="./img/user-5.jpg" alt="" class="recommend__photo">
+                                <img src="./img/user-6.webp" alt="" class="recommend__photo">
+                                <img src="./img/user-7.webp" alt="" class="recommend__photo">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="user-reviews">
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, accusamus.
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="./img/user-2.jfif" alt="" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">Md Siam</p>
+                                    <p class="review__user-date">feb 23rd,2017</p>
+
+                                </div>
+                                <div class="review__rating">7.8</div>
+                            </figcaption>
+                        </figure>
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, accusamus.
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="./img/user-3.jpg" alt="" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">Md Siam</p>
+                                    <p class="review__user-date">feb 23rd,2017</p>
+
+                                </div>
+                                <div class="review__rating">7.8</div>
+                            </figcaption>
+                        </figure>
+
+                        <button class="btn-inline">Show all <span>&rarr;</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="cta">
+                    <h2 class="cta__book-now">
+                        Good News! we have 4free rooms for your select
+                    </h2>
+                    <button class="btn">
+                        <span class="btn__visible">Book Now</span>
+                        <span class="btn__invisible">only 4 rooms left</span>
+
+                    </button>
+                </div>
+
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
